@@ -12,7 +12,8 @@ module.exports = {
     output: {
         path: path.join(rootDir, 'dist'),
         filename: '[name].js',
-        library: 'WaveSurfer'
+        library: 'WaveSurfer',
+        globalObject: 'this'
     },
     plugins: [banner.libBanner]
 };

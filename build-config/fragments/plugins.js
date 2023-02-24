@@ -69,7 +69,8 @@ module.exports = {
     output: {
         path: path.join(rootDir, 'dist', 'plugin'),
         filename: 'wavesurfer.[name].js',
-        library: ['WaveSurfer', '[name]']
+        library: ['WaveSurfer', '[name]'],
+        globalObject: 'this'
     },
     devServer: {
         devMiddleware: {
